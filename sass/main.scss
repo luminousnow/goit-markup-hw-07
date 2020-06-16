@@ -15,9 +15,9 @@ html {
 body {
   margin: 0px;
 
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+  font-family: $primary-font-style;
+  font-weight: $font-weight;
+  font-size: $font-size;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $font-color-primary;
