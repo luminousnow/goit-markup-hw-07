@@ -157,9 +157,12 @@ img {
 
   background-color: $bgc-secondary;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color $transition-duration $transition-timing-function
+      $transition-delay,
+    box-shadow $transition-duration $transition-timing-function
+      $transition-delay,
+    background-color $transition-duration $transition-timing-function
+      $transition-delay;
 }
 
 .filter__button:hover,
@@ -226,7 +229,7 @@ img {
   letter-spacing: 0.02em;
   color: $font-color-secondary;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $transition-duration $transition-timing-function $transition-delay;
 }
 
 .menu__link:hover,
@@ -280,7 +283,7 @@ img {
   letter-spacing: 0.02em;
   color: $font-color-primary;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $transition-duration $transition-timing-function $transition-delay;
 }
 
 .contact-email__icon,
@@ -358,7 +361,8 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity $transition-duration $transition-timing-function
+    $transition-delay;
 }
 
 .backdrop--hiden {
@@ -381,8 +385,9 @@ img {
     0px 1px 3px rgba(0, 0, 0, 0.12);
 
   opacity: 1;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform $transition-duration $transition-timing-function
+      $transition-delay,
+    opacity $transition-duration $transition-timing-function $transition-delay;
 }
 
 .modal__close-btn {
@@ -504,7 +509,8 @@ textarea:not(:placeholder-shown) ~ .form__field-title {
   letter-spacing: 0.01em;
 
   color: $font-color-primary;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform $transition-duration $transition-timing-function
+    $transition-delay;
 }
 
 .form__field-title--no-image {
@@ -711,8 +717,10 @@ textarea:not(:placeholder-shown) ~ .form__field-title {
   fill: currentColor;
   background-color: $bgc-primary;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color $transition-duration $transition-timing-function
+      $transition-delay,
+    background-color $transition-duration $transition-timing-function
+      $transition-delay;
 }
 
 .team__social-icon:hover,
@@ -738,13 +746,14 @@ textarea:not(:placeholder-shown) ~ .form__field-title {
   justify-content: center;
   align-items: center;
 
-  border: 1px solid #afb1b8;
+  border: 1px solid $border-color-client;
   border-radius: 4px;
   color: $font-color-primary;
   fill: currentColor;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color $transition-duration $transition-timing-function
+      $transition-delay,
+    border $transition-duration $transition-timing-function $transition-delay;
 }
 
 .client__link:hover,
@@ -825,7 +834,8 @@ textarea:not(:placeholder-shown) ~ .form__field-title {
   color: $font-color-primary;
   background-color: $font-color-primary;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $transition-duration $transition-timing-function
+    $transition-delay;
 }
 
 .social-net__link:hover,
@@ -902,7 +912,8 @@ textarea:not(:placeholder-shown) ~ .form__field-title {
 
 .card__link {
   display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: box-shadow $transition-duration $transition-timing-function
+    $transition-delay;
 }
 
 .card__link:hover,
@@ -926,8 +937,8 @@ textarea:not(:placeholder-shown) ~ .form__field-title {
   color: $bgc-primary;
   background-color: $bgc-card-description;
 
-  /* delay 250ms */
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: transform $transition-duration $transition-timing-function
+    $transition-delay;
 }
 
 .card__link:hover .card__description,
@@ -943,9 +954,9 @@ textarea:not(:placeholder-shown) ~ .form__field-title {
 .card__content {
   padding: 20px 0px;
 
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  border-right: 1px solid $border-color-portfolio;
+  border-bottom: 1px solid $border-color-portfolio;
+  border-left: 1px solid $border-color-portfolio;
 }
 
 .card__title {

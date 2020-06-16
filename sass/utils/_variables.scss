@@ -1,3 +1,5 @@
+// Fonts & background color
+
 $font-color-primary: #757575;
 $font-color-secondary: #212121;
 $font-color-third: #ffffff;
@@ -15,3 +17,10 @@ $bgc-button: #2196f3;
 $bgc-modal: #ffffff;
 
 $border-color-hdr: #ececec;
+$border-color-client: #afb1b8;
+$border-color-portfolio: #eeeeee;
+
+// Animation
+$transition-duration: 250ms;
+$transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$transition-delay: 0ms;
