@@ -41,7 +41,7 @@ img {
 }
 
 /* delete underline from the link */
-.button, .address__geo,
+.hero__btn, .submit__btn, .join__btn, .address__geo,
 .address__email,
 .address__tel, .menu__link, .contact-email__link,
 .contact-tel__link, .logo__nav, .logo__footer, .card__link {
@@ -68,8 +68,8 @@ img {
   clip: rect(0 0 0 0);
 }
 
-/* Virtual button css options*/
-.button {
+/* Button */
+.hero__btn, .submit__btn, .join__btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -91,6 +91,7 @@ img {
   border-style: none;
 }
 
+/* Modal button */
 .submit__btn {
   border-style: none;
   -webkit-box-pack: center;
@@ -98,7 +99,7 @@ img {
           justify-content: center;
 }
 
-/* Footer button */
+/* JOIN button */
 .join__btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -107,7 +108,7 @@ img {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.icon-send {
+.join__btn .icon-send {
   width: 24px;
   height: 24px;
   margin-left: 10px;
