@@ -44,7 +44,7 @@ img {
 .button, .address__geo,
 .address__email,
 .address__tel, .menu__link, .contact-email__link,
-.contact-tel__link, .logo, .card__link {
+.contact-tel__link, .logo__nav, .logo__footer, .card__link {
   text-decoration: none;
 }
 
@@ -479,12 +479,17 @@ img {
   text-transform: uppercase;
 }
 
-/* Logo css options */
-.logo {
+/* Logo */
+.logo__nav, .logo__footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  /* Logo accent */
+}
+
+.logo__nav .logo__accent, .logo__footer .logo__accent {
+  color: #2196f3;
 }
 
 /* Logo header */
@@ -496,11 +501,6 @@ img {
 /* Logo footer */
 .logo__footer {
   color: #ffffff;
-}
-
-/* Logo accent */
-.logo__accent {
-  color: #2196f3;
 }
 
 .backdrop {
