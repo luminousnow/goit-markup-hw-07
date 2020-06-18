@@ -1,0 +1,77 @@
+@import "../utils/variables";
+
+/* Virtual button css options*/
+.button {
+  @extend %no-link;
+  display: inline-flex;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $font-color-button;
+  text-align: center;
+
+  background-color: $bgc-button;
+}
+
+/* Hero button */
+.hero__btn {
+  border-style: none;
+}
+
+.submit__btn {
+  border-style: none;
+  justify-content: center;
+}
+
+/* Footer button */
+.join__btn {
+  align-items: center;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.icon-send {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+
+  fill: currentColor;
+}
+
+/* Filter button css options*/
+.filter__button {
+  padding: 6px 22px;
+
+  border-style: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $font-color-secondary;
+
+  background-color: $bgc-secondary;
+
+  transition: color $transition-duration $transition-timing-function
+      $transition-delay,
+    box-shadow $transition-duration $transition-timing-function
+      $transition-delay,
+    background-color $transition-duration $transition-timing-function
+      $transition-delay;
+}
+
+.filter__button:hover,
+.filter__button:focus {
+  color: $font-color-third;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
+  background-color: $font-color-active-element;
+}

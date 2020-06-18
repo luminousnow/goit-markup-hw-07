@@ -1,0 +1,118 @@
+@import "../utils/variables";
+
+.header {
+  border-bottom: 1px solid $border-color-hdr;
+}
+
+.header--no-border {
+  border: 0px;
+}
+
+/* Header Menu css options */
+.menu {
+  @extend %no-list;
+  display: flex;
+}
+
+.menu__item {
+  position: relative;
+}
+
+.menu__item + .menu__item {
+  margin-left: 50px;
+}
+
+.menu__link {
+  @extend %no-link;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: $font-color-secondary;
+
+  transition: $transition-duration $transition-timing-function $transition-delay;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+  color: $font-color-active-element;
+}
+
+.menu__link--current {
+  color: $font-color-active-element;
+}
+
+.menu__link--current::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+
+  border-radius: 2px;
+  background-color: $font-color-active-element;
+}
+
+/* Header contacts */
+.header__menu {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-contact {
+  @extend %no-list;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.contact-email__link,
+.contact-tel__link {
+  @extend %no-link;
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $font-color-primary;
+
+  transition: $transition-duration $transition-timing-function $transition-delay;
+}
+
+.contact-email__icon,
+.contact-tel__icon {
+  margin-right: 10px;
+
+  fill: currentColor;
+}
+
+.contact-email {
+  display: flex;
+  margin-right: 30px;
+  align-items: center;
+}
+
+.contact-tel {
+  display: flex;
+  align-items: center;
+}
+
+.contact-email__link:hover,
+.contact-email__link:focus,
+.contact-tel__link:hover,
+.contact-tel__link:focus {
+  color: $font-color-active-element;
+}
