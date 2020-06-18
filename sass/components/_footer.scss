@@ -1,6 +1,6 @@
 @import "../utils/variables";
 
-/* Footer general css options */
+/* General */
 .footer {
   padding-top: 48px;
   padding-bottom: 0px;
@@ -10,7 +10,6 @@
   background-color: $bgc-footer;
 }
 
-/* Footer general css options */
 .footer__content {
   display: flex;
   align-items: baseline;
@@ -63,6 +62,10 @@
   margin-right: 10px;
 }
 
+.social-net__icon {
+  fill: $font-color-third;
+}
+
 .social-net__link {
   display: flex;
   width: 44px;
@@ -76,44 +79,11 @@
 
   transition: background-color $transition-duration $transition-timing-function
     $transition-delay;
-}
 
-.social-net__link:hover,
-.social-net__link:focus {
-  background-color: $font-color-active-element;
-}
-
-.social-net__icon {
-  fill: $font-color-third;
-}
-
-.join__title {
-  margin-bottom: 20px;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-.join__conteiner {
-  display: inline-flex;
-  align-items: center;
-}
-
-.join__email {
-  margin-right: 12px;
-  padding: 15px 16px;
-  width: 358px;
-
-  color: $font-color-ftr-contact;
-  background-color: $bgc-footer;
-  font-size: 16px;
-  line-height: 1.25;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    background-color: $font-color-active-element;
+  }
 }
 
 /* Footer copiright css options */
