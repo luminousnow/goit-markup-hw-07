@@ -18,23 +18,23 @@
     ),
     url("../img/header-img.jpg");
   background-color: $bgc-footer;
-}
 
-.hero__box {
-  width: 710px;
+  .hero__box {
+    width: 710px;
 
-  text-align: center;
-}
+    text-align: center;
 
-.hero__title {
-  margin-top: 0px;
-  margin-bottom: 45px;
+    .hero__title {
+      margin-top: 0px;
+      margin-bottom: 45px;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  color: $font-color-hero;
-  text-align: center;
-  text-transform: uppercase;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      letter-spacing: 0.06em;
+      color: $font-color-hero;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
 }

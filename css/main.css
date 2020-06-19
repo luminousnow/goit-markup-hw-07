@@ -449,12 +449,12 @@ img {
   background-color: #2f303a;
 }
 
-.hero__box {
+.hero .hero__box {
   width: 710px;
   text-align: center;
 }
 
-.hero__title {
+.hero .hero__box .hero__title {
   margin-top: 0px;
   margin-bottom: 45px;
   font-weight: 900;
