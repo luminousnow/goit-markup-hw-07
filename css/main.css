@@ -503,11 +503,6 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  /* Logo accent */
-}
-
-.logo__nav .logo__accent, .logo__footer .logo__accent {
-  color: #2196f3;
 }
 
 /* Logo header */
@@ -519,6 +514,11 @@ img {
 /* Logo footer */
 .logo__footer {
   color: #ffffff;
+}
+
+/* Logo accent */
+.logo__accent {
+  color: #2196f3;
 }
 
 .backdrop {

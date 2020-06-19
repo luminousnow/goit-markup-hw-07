@@ -7,11 +7,6 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-
-  /* Logo accent */
-  .logo__accent {
-    color: $font-color-active-element;
-  }
 }
 
 /* Logo header */
@@ -26,4 +21,9 @@
 .logo__footer {
   @extend %logo;
   color: $font-color-third;
+}
+
+/* Logo accent */
+.logo__accent {
+  color: $font-color-active-element;
 }
