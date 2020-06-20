@@ -38,21 +38,21 @@
   transition: transform $transition-duration $transition-timing-function
       $transition-delay,
     opacity $transition-duration $transition-timing-function $transition-delay;
-}
 
-.modal__close-btn {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 0;
-  right: 0;
-  transform: translate(30%, -30%);
+  &__close-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 0;
+    transform: translate(30%, -30%);
 
-  border-radius: 50%;
-  border-style: none;
-  background-color: $bgc-primary;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 50%;
+    border-style: none;
+    background-color: $bgc-primary;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .backdrop--hiden .modal {
@@ -65,18 +65,18 @@
 .form__field {
   display: block;
   position: relative;
-}
 
-.form__field:not(:nth-last-of-type(-n + 2)) {
-  margin-bottom: 28px;
-}
+  &:not(:nth-last-of-type(-n + 2)) {
+    margin-bottom: 28px;
+  }
 
-.form__field:nth-last-of-type(2) {
-  margin-bottom: 20px;
-}
+  &:nth-last-of-type(2) {
+    margin-bottom: 20px;
+  }
 
-.form__field:nth-last-of-type(1) {
-  margin-bottom: 30px;
+  &:nth-last-of-type(1) {
+    margin-bottom: 30px;
+  }
 }
 
 input {
@@ -92,20 +92,20 @@ input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-}
 
-input:focus {
-  border: 1px solid $font-color-active-element;
-}
+  &:focus {
+    border: 1px solid $font-color-active-element;
+  }
 
-.form__field > input:focus ~ .form__icon {
-  fill: $font-color-active-element;
-}
+  &:focus ~ .form__icon {
+    fill: $font-color-active-element;
+  }
 
-.form__field > input:focus ~ .form__field-title {
-  transform: translate(-25px, -20px);
+  &:focus ~ .form__field-title {
+    transform: translate(-25px, -20px);
 
-  color: $font-color-active-element;
+    color: $font-color-active-element;
+  }
 }
 
 .form__input:not(:placeholder-shown) ~ .form__field-title {
@@ -122,20 +122,10 @@ textarea {
   box-sizing: border-box;
   border-radius: 4px;
   outline: none;
-}
 
-textarea:focus {
-  border: 1px solid $font-color-active-element;
-}
-
-textarea:focus ~ .form__field-title {
-  transform: translate(0px, -20px);
-
-  color: $font-color-active-element;
-}
-
-textarea:not(:placeholder-shown) ~ .form__field-title {
-  transform: translate(0px, -20px);
+  &:focus {
+    border: 1px solid $font-color-active-element;
+  }
 }
 
 .modal__title {
@@ -161,10 +151,20 @@ textarea:not(:placeholder-shown) ~ .form__field-title {
   color: $font-color-primary;
   transition: transform $transition-duration $transition-timing-function
     $transition-delay;
-}
 
-.form__field-title--no-image {
-  left: 18px;
+  &--no-image {
+    left: 18px;
+  }
+
+  textarea:focus ~ & {
+    transform: translate(0px, -20px);
+
+    color: $font-color-active-element;
+  }
+
+  textarea:not(:placeholder-shown) ~ & {
+    transform: translate(0px, -20px);
+  }
 }
 
 .form__icon {
@@ -179,10 +179,10 @@ textarea:not(:placeholder-shown) ~ .form__field-title {
 .form__field.policy {
   display: flex;
   align-items: center;
-}
 
-.form__field.policy > a {
-  display: contents;
+  a {
+    display: contents;
+  }
 }
 
 .checkbox__icon {
@@ -193,19 +193,19 @@ textarea:not(:placeholder-shown) ~ .form__field-title {
 
   border: 2px solid $font-color-secondary;
   border-radius: 2px;
-}
 
-.checkbox:checked ~ .checkbox__icon {
-  display: inline-flex;
-  margin-right: 9px;
-  width: 15px;
-  height: 15px;
+  .checkbox:checked ~ & {
+    display: inline-flex;
+    margin-right: 9px;
+    width: 15px;
+    height: 15px;
 
-  border: 2px solid $font-color-active-element;
-  border-radius: 2px;
-  background-origin: content-box;
-  background-color: $font-color-active-element;
-  background-image: url(../img/icon-checked.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
+    border: 2px solid $font-color-active-element;
+    border-radius: 2px;
+    background-origin: content-box;
+    background-color: $font-color-active-element;
+    background-image: url(../img/icon-checked.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }

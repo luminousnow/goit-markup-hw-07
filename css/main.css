@@ -615,11 +615,11 @@ input:focus {
   border: 1px solid #2196f3;
 }
 
-.form__field > input:focus ~ .form__icon {
+input:focus ~ .form__icon {
   fill: #2196f3;
 }
 
-.form__field > input:focus ~ .form__field-title {
+input:focus ~ .form__field-title {
   -webkit-transform: translate(-25px, -20px);
           transform: translate(-25px, -20px);
   color: #2196f3;
@@ -644,17 +644,6 @@ textarea {
 
 textarea:focus {
   border: 1px solid #2196f3;
-}
-
-textarea:focus ~ .form__field-title {
-  -webkit-transform: translate(0px, -20px);
-          transform: translate(0px, -20px);
-  color: #2196f3;
-}
-
-textarea:not(:placeholder-shown) ~ .form__field-title {
-  -webkit-transform: translate(0px, -20px);
-          transform: translate(0px, -20px);
 }
 
 .modal__title {
@@ -686,6 +675,17 @@ textarea:not(:placeholder-shown) ~ .form__field-title {
   left: 18px;
 }
 
+textarea:focus ~ .form__field-title {
+  -webkit-transform: translate(0px, -20px);
+          transform: translate(0px, -20px);
+  color: #2196f3;
+}
+
+textarea:not(:placeholder-shown) ~ .form__field-title {
+  -webkit-transform: translate(0px, -20px);
+          transform: translate(0px, -20px);
+}
+
 .form__icon {
   position: absolute;
   width: 18px;
@@ -705,7 +705,7 @@ textarea:not(:placeholder-shown) ~ .form__field-title {
           align-items: center;
 }
 
-.form__field.policy > a {
+.form__field.policy a {
   display: contents;
 }
 
