@@ -835,6 +835,35 @@ textarea:not(:placeholder-shown) ~ .form__field-title {
   margin: 15px;
 }
 
+.card__box-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__content {
+  padding: 20px 0px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.card__title {
+  margin-bottom: 4px;
+  padding: 0px 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.card__kinde {
+  padding: 0px 24px;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #757575;
+}
+
 .card__link {
   display: block;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -843,8 +872,7 @@ textarea:not(:placeholder-shown) ~ .form__field-title {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
-.card__link:hover,
-.card__link:focus {
+.card__link:hover, .card__link:focus {
   -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
@@ -873,35 +901,6 @@ textarea:not(:placeholder-shown) ~ .form__field-title {
 .card__link:focus .card__description {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
-}
-
-.card__box-image {
-  position: relative;
-  overflow: hidden;
-}
-
-.card__content {
-  padding: 20px 0px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-}
-
-.card__title {
-  margin-bottom: 4px;
-  padding: 0px 24px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: #212121;
-}
-
-.card__kinde {
-  padding: 0px 24px;
-  font-size: 16px;
-  line-height: 1.87;
-  color: #757575;
 }
 
 /* Product css options */

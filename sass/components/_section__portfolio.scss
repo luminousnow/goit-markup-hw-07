@@ -23,6 +23,38 @@
 .card {
   width: 370px;
   margin: 15px;
+
+  &__box-image {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__content {
+    padding: 20px 0px;
+
+    border-right: 1px solid $border-color-portfolio;
+    border-bottom: 1px solid $border-color-portfolio;
+    border-left: 1px solid $border-color-portfolio;
+  }
+
+  &__title {
+    margin-bottom: 4px;
+    padding: 0px 24px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $font-color-secondary;
+  }
+
+  &__kinde {
+    padding: 0px 24px;
+
+    font-size: 16px;
+    line-height: 1.87;
+    color: $font-color-primary;
+  }
 }
 
 .card__link {
@@ -30,12 +62,12 @@
   display: block;
   transition: box-shadow $transition-duration $transition-timing-function
     $transition-delay;
-}
 
-.card__link:hover,
-.card__link:focus {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .card__description {
@@ -55,41 +87,9 @@
 
   transition: transform $transition-duration $transition-timing-function
     $transition-delay;
-}
 
-.card__link:hover .card__description,
-.card__link:focus .card__description {
-  transform: translate(0, 0);
-}
-
-.card__box-image {
-  position: relative;
-  overflow: hidden;
-}
-
-.card__content {
-  padding: 20px 0px;
-
-  border-right: 1px solid $border-color-portfolio;
-  border-bottom: 1px solid $border-color-portfolio;
-  border-left: 1px solid $border-color-portfolio;
-}
-
-.card__title {
-  margin-bottom: 4px;
-  padding: 0px 24px;
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: $font-color-secondary;
-}
-
-.card__kinde {
-  padding: 0px 24px;
-
-  font-size: 16px;
-  line-height: 1.87;
-  color: $font-color-primary;
+  .card__link:hover &,
+  .card__link:focus & {
+    transform: translate(0, 0);
+  }
 }
